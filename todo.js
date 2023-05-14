@@ -69,12 +69,12 @@ const checkIsAllCompleted = () => {
 }
 
 const onClickCompleteAll = () => {
-    if(!getAllTodos().length) ; // todos배열의 길이가 0이면 return;
+    if(!getAllTodos().length) ; 
 
     if(isAllCompleted) incompleteAll(); // isAllCompleted가 true이면 todos를 전체 미완료 처리 
-    else completeAll(); // isAllCompleted가 false이면 todos를 전체 완료 처리 
-    setIsAllCompleted(!isAllCompleted); // isAllCompleted 토글
-    paintTodos(); // 새로운 todos를 렌더링
+    else completeAll(); 
+    setIsAllCompleted(!isAllCompleted); 
+    paintTodos(); 
     setLeftItems()
 }
 
@@ -184,8 +184,7 @@ const init = () => {
 
     setLeftItems()
     getTime();
-    setInterval(getTime, 1000); // 괄호안에 있는 함수를 1초마다 업데이터하는 함수.(1000이라 적은 이유는 백만분의 1이기 때문에) 이 함수가 없으면 그냥 새로고침할때의 시간이 그대로 박제되어있게 된다.
-}
+    setInterval(getTime, 1000); 
 
   
 init()
