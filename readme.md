@@ -15,6 +15,7 @@ const checkIsAllCompleted = () => {  //전체 완료 처리 확인
     if(getAllTodos().length === getCompletedTodos().length ){ 
     <br/>
         setIsAllCompleted(true); 
+        <br/>
         completeAllBtnElem.classList.add('checked'); //체크 
     }else { //아니면 
         setIsAllCompleted(false);
