@@ -11,7 +11,9 @@ TOdoList 구현
 //할 일이 추가 될때마다 전체 할 일의 완료 상태를 파악
 
 const checkIsAllCompleted = () => {  //전체 완료 처리 확인
+<br/>
     if(getAllTodos().length === getCompletedTodos().length ){ 
+    <br/>
         setIsAllCompleted(true); 
         completeAllBtnElem.classList.add('checked'); //체크 
     }else { //아니면 
