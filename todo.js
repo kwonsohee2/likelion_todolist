@@ -69,7 +69,7 @@ const checkIsAllCompleted = () => {
 }
 
 const onClickCompleteAll = () => {
-    if(!getAllTodos().length) ; 
+    if(!getAllTodos().length) return; 
 
     if(isAllCompleted) incompleteAll(); // isAllCompleted가 true이면 todos를 전체 미완료 처리 
     else completeAll(); 
